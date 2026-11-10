@@ -1,0 +1,17 @@
+
+# HASIL EKSPERIMEN CNN
+
+Folder ini digunakan untuk menyimpan hasil dari proses eksperimen klasifikasi citra menggunakan CNN.
+
+## Rencana Isi
+
+1. Grafik akurasi dan loss.
+2. Confusion matrix.
+3. Tabel hasil eksperimen dalam format CSV.
+4. Gambar hasil prediksi model.
+5. Dokumentasi kesalahan klasifikasi.
+
+## Status
+Belum terdapat hasil eksperimen karena proses baseline, preprocessing, training, dan testing belum dilaksanakan.
+
+Hasil eksperimen akan disimpan secara bertahap setelah proses pengujian dilakukan.
