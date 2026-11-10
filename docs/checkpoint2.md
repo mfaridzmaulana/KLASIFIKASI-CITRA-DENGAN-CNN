@@ -1,48 +1,47 @@
 
+# Checkpoint 2 – Eksperimen dan Evaluasi Model
 
-# CHECKPOINT 2 — PERSIAPAN DATASET DAN LINGKUNGAN PENGEMBANGAN
+## 1. Tujuan
 
-## 1. Perkembangan Proyek
-Pada tahap ini, pengumpulan dataset telah selesai dilakukan. Selanjutnya dilakukan persiapan struktur penyimpanan data dan lingkungan pengembangan untuk mendukung proses klasifikasi citra menggunakan CNN.
+Mendokumentasikan pelaksanaan eksperimen klasifikasi citra menggunakan tiga pendekatan.
 
-## 2. Struktur Penyimpanan Dataset
-Dataset disimpan di Google Drive dengan pengelompokan berdasarkan tiga kelas objek:
-- Laptop
-- Buku Gambar
-- Tas
+## 2. Metode Eksperimen
 
-Setiap kelas memiliki 40 foto yang dikumpulkan secara mandiri dengan kondisi ideal dan sulit.
+1. HOG + SVM
+2. CNN Baseline
+3. CNN Improved
 
-## 3. Pengelolaan Proyek di GitHub
-Repository GitHub telah dibuat dengan nama:
-KLASIFIKASI-CITRA-DENGAN-CNN
+## 3. Hasil Pengujian
 
-Struktur repository saat ini terdiri dari:
-- data/ : Penyimpanan dan pengelolaan data.
-- docs/ : Dokumentasi proyek.
-- notebooks/ : Tempat pengerjaan menggunakan Google Colab.
-- src/ : Persiapan penyimpanan kode program.
-- README.md : Informasi umum proyek.
+| Metode | Akurasi |
+|---|---:|
+| HOG + SVM | 72,22% |
+| CNN Baseline | 72,22% |
+| CNN Improved | 50,00% |
 
-## 4. Persiapan Lingkungan Pengembangan
-- Google Drive telah dibuat dan disusun untuk penyimpanan dataset.
-- Repository GitHub telah dibuat.
-- Google Colab telah disiapkan dan dihubungkan dengan GitHub.
-- Notebook digunakan sebagai lingkungan pengerjaan program Python.
+Jumlah data testing: 18 gambar.
 
-## 5. Tahapan yang Belum Dilaksanakan
-- [ ] Pemeriksaan dan seleksi kualitas seluruh gambar.
-- [ ] Preprocessing citra.
-- [ ] Resize dan normalisasi gambar.
-- [ ] Pembagian data training, validation, dan testing.
-- [ ] Pembuatan arsitektur model CNN.
-- [ ] Proses training model.
-- [ ] Evaluasi hasil klasifikasi.
-- [ ] Pengujian model pada kondisi ideal dan sulit.
-- [ ] Analisis kesalahan klasifikasi.
+## 4. Perbandingan Kondisi
 
-## 6. Kendala dan Catatan
-Sampai checkpoint ini, pekerjaan masih berfokus pada pengumpulan dataset dan persiapan lingkungan pengembangan. Eksperimen model CNN belum dilaksanakan sehingga belum terdapat hasil akurasi maupun evaluasi model.
+| Metode | Ideal | Sulit |
+|---|---:|---:|
+| HOG + SVM | 77,78% | 66,67% |
+| CNN Baseline | 66,67% | 77,78% |
+| CNN Improved | 44,44% | 55,56% |
 
-## 7. Rencana Selanjutnya
-Tahap selanjutnya adalah melakukan pemeriksaan dataset, preprocessing citra, pembagian dataset, kemudian membangun dan melatih model CNN untuk melakukan klasifikasi tiga kelas objek.
+## 5. Analisis Awal
+
+HOG + SVM dan CNN Baseline mendapatkan akurasi tertinggi, yaitu 72,22%.
+
+CNN Improved memperoleh akurasi 50,00%. Hasil tersebut menunjukkan bahwa penambahan augmentasi dan perubahan arsitektur belum meningkatkan performa model pada dataset eksperimen ini.
+
+## 6. Status
+
+Eksperimen dan analisis awal telah dilakukan.
+
+## 7. Pekerjaan Selanjutnya
+
+- Melengkapi confusion matrix.
+- Mendokumentasikan gambar yang salah diklasifikasikan.
+- Menyusun pembahasan hasil.
+- Menyelesaikan laporan dan presentasi.
