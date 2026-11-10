@@ -1,18 +1,65 @@
-P3 = Kartu Dataset (Dataset Documentation)
 
-File ini berisi informasi dan karakteristik dataset yang benar-benar dikumpulkan.
+# Data Card – Dataset Klasifikasi Citra
 
-Isi yang perlu dicantumkan:
-1. Nama dan deskripsi dataset.
-2. Tujuan penggunaan dataset.
-3. Sumber dataset (foto sendiri).
-4. Perangkat pengambilan gambar (Samsung Galaxy A51).
-5. Jumlah keseluruhan foto.
-6. Jumlah foto setiap kelas.
-7. Kondisi gambar (ideal dan blur).
-8. Format file gambar.
-9. Ukuran atau resolusi gambar.
-10. Struktur folder dataset.
-11. Potensi bias dan keterbatasan dataset.
-12. Hasil pemeriksaan kualitas dan duplikasi.
-13. Ketentuan penggunaan dataset.
+## 1. Informasi Dataset
+
+Nama: Dataset Klasifikasi Citra Objek
+
+Jumlah data: 120 gambar
+
+Sumber: Pengambilan gambar mandiri.
+
+Perangkat: Samsung Galaxy A51.
+
+## 2. Kategori Dataset
+
+| Kelas | Kondisi Ideal | Kondisi Sulit | Total |
+|---|---:|---:|---:|
+| Laptop | 20 | 20 | 40 |
+| Buku Gambar | 20 | 20 | 40 |
+| Tas | 20 | 20 | 40 |
+| Total | 60 | 60 | 120 |
+
+## 3. Karakteristik Data
+
+Kondisi ideal:
+- Objek terlihat jelas.
+- Fokus kamera baik.
+- Pencahayaan relatif stabil.
+
+Kondisi sulit:
+- Gambar mengalami blur.
+- Ketajaman gambar berkurang.
+- Kondisi pengambilan gambar lebih menantang.
+
+## 4. Preprocessing
+
+- Pemeriksaan gambar.
+- Penyesuaian ukuran menjadi 128 x 128 piksel.
+- Penyesuaian format gambar.
+- Normalisasi nilai piksel untuk CNN.
+
+## 5. Pembagian Dataset
+
+| Pembagian | Jumlah |
+|---|---:|
+| Training | 84 |
+| Validation | 18 |
+| Testing | 18 |
+
+## 6. Penggunaan Dataset
+
+Dataset digunakan untuk:
+- Eksperimen HOG + SVM.
+- Eksperimen CNN Baseline.
+- Eksperimen CNN Improved.
+- Evaluasi kondisi ideal dan sulit.
+
+## 7. Keterbatasan Dataset
+
+Jumlah dataset masih terbatas, yaitu 120 gambar.
+Variasi objek, sudut pengambilan, latar belakang, dan pencahayaan dapat memengaruhi hasil klasifikasi.
+
+## 8. Privasi dan Penggunaan
+
+Dataset dikumpulkan untuk kepentingan akademik dan penelitian Computer Vision.
