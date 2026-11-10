@@ -5,9 +5,9 @@ Isi yang perlu dicantumkan:
 1. Judul proyek klasifikasi citra.
 2. Tujuan pengumpulan dataset.
 3. Kelas objek yang digunakan:
-   - Laptop
-   - Buku Gambar
-   - Tas
+   - Laptop 40 buah
+   - Buku Gambar 40 bua
+   - Tas 40 buha
 4. Jumlah dataset yang direncanakan (120 foto).
 5. Rencana jumlah foto setiap kelas (40 foto).
 6. Kondisi pengambilan gambar (ideal dan blur).
