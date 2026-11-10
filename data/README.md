@@ -9,11 +9,11 @@ Dataset digunakan untuk proyek klasifikasi citra menggunakan metode Convolutiona
 ## 2. Kelas dan Jumlah Dataset
 
 | No | Kelas | Jumlah Foto |
-|---|---|---:|
-| 1 | Laptop | 40 |
+
+| 1 | Laptop       | 40 |
 | 2 | Buku Gambar | 40 |
-| 3 | Tas | 40 |
-| | TOTAL | 120 |
+| 3 | Tas         |  40 |
+| | TOTAL         | 120 |
 
 ## 3. Kondisi Pengambilan Gambar
 
@@ -32,7 +32,7 @@ Dataset dikumpulkan dalam dua kondisi:
 Dataset asli disimpan di Google Drive dan dikelompokkan berdasarkan kelas objek serta kondisi pengambilan gambar.
 
 Link Google Drive:
-[MASUKKAN LINK GOOGLE DRIVE DI SINI]
+https://drive.google.com/drive/folders/1XOrs7kWREk70p7YY_G2mvfE7bX0JuAVP
 
 ## 6. Cara Mengakses Dataset
 
