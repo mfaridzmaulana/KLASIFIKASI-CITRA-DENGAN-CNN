@@ -1,48 +1,54 @@
-# python
-import cv2
-import numpy as np
-from google.colab import files
-from google.colab.patches import cv2_imshow
 
+# DATASET KLASIFIKASI CITRA CNN
 
-print("Versi OpenCV:", cv2.__version__)
+## 1. Deskripsi Dataset
+Dataset merupakan kumpulan gambar yang diambil secara mandiri menggunakan smartphone Samsung Galaxy A51.
 
+Dataset digunakan untuk proyek klasifikasi citra menggunakan metode Convolutional Neural Network (CNN).
 
-def kecilkan(gambar, lebar=600):
-    tinggi = int(gambar.shape[0] * lebar / gambar.shape[1])
-    return cv2.resize(gambar, (lebar, tinggi))
+## 2. Kelas dan Jumlah Dataset
 
+| No | Kelas | Jumlah Foto |
+|---|---|---:|
+| 1 | Laptop | 40 |
+| 2 | Buku Gambar | 40 |
+| 3 | Tas | 40 |
+| | TOTAL | 120 |
 
-unggah = files.upload()                      # pilih 1 foto (dari HP/laptop)
-nama = list(unggah.keys())[0]
-mentah = cv2.imread(nama)                    # OpenCV membaca urutan kanal B, G, R
-assert mentah is not None, "Gambar gagal dibaca - coba format JPG/PNG"
-img = kecilkan(mentah)
+## 3. Kondisi Pengambilan Gambar
 
+Dataset dikumpulkan dalam dua kondisi:
 
-#RGB
+- Ideal: Objek diambil dengan kondisi pencahayaan dan fokus yang baik.
+- Sulit: Objek diambil dengan kondisi yang lebih menantang, seperti kurang fokus atau blur.
 
-print("Bentuk (tinggi, lebar, kanal):", img.shape)
-print("Tipe data:", img.dtype)
-print("Nilai piksel kiri-atas (B, G, R):", img[0, 0])
-cv2_imshow(img)
+## 4. Perangkat Pengambilan
+- Smartphone: Samsung Galaxy A51.
+- Sumber dataset: Pengambilan foto secara mandiri.
+- Jumlah keseluruhan: 120 foto.
 
-# Konversi gambar berwarna (3 kanal BGR) menjadi derajat keabuan / grayscale (1 kanal)
+## 5. Lokasi Dataset
 
+Dataset asli disimpan di Google Drive dan dikelompokkan berdasarkan kelas objek serta kondisi pengambilan gambar.
 
-abu = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)         # hitam-putih (1 kanal)
-mini = cv2.resize(abu, (8, 8), interpolation=cv2.INTER_AREA)
-print(mini)                                         # 64 angka = "gambar" 8x8
-print("Nilai Piksel Terenda(Gelap):", mini.min(), " Tertinggi(Ter:", mini.max())
+Link Google Drive:
+[MASUKKAN LINK GOOGLE DRIVE DI SINI]
 
+## 6. Cara Mengakses Dataset
 
-# Haluskan gambar terlebih dahulu untuk meredam bintik derau (noise)
-blur = cv2.GaussianBlur(abu, (5, 5), 0)
+1. Buka link Google Drive yang tersedia.
+2. Masuk ke folder dataset.
+3. Pilih folder kelas Laptop, Buku Gambar, atau Tas.
+4. Pilih gambar berdasarkan kondisi ideal atau sulit.
+5. Gunakan dataset melalui Google Colab untuk proses pengolahan citra.
 
+## 7. Penyimpanan Dataset
 
-# Bandingkan deteksi tepi dengan ambang batas ketat vs. ambang batas sensitif
-tepi_a = cv2.Canny(blur, 100, 200)
-tepi_b = cv2.Canny(blur, 30, 80)
-cv2_imshow(tepi_a)
-cv2_imshow(tepi_b)
+Dataset lengkap disimpan di Google Drive, bukan di GitHub.
 
+Repository GitHub digunakan untuk menyimpan dokumentasi, kode program, dan hasil eksperimen.
+
+Sesuai ketentuan proyek, GitHub hanya akan digunakan untuk menyimpan sampel kecil dataset maksimal 20 file.
+
+## 8. Status
+Pengumpulan 120 foto dataset telah dilakukan. Tahap preprocessing dan eksperimen CNN belum dilaksanakan.
