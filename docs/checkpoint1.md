@@ -1,48 +1,44 @@
 
+# Checkpoint 1 – Pengumpulan dan Persiapan Dataset
 
-# CHECKPOINT 1 — PERENCANAAN DAN PENGUMPULAN DATASET
+## 1. Tujuan
 
-## 1. Informasi Proyek
-- Nama Proyek: Klasifikasi Citra Menggunakan Convolutional Neural Network (CNN)
-- Mata Kuliah: Computer Vision
-- Kelompok: 3
+Mendokumentasikan proses pengumpulan dan persiapan dataset untuk klasifikasi citra.
 
-## 2. Tujuan Proyek
-Proyek ini bertujuan untuk membangun sistem klasifikasi citra menggunakan metode Convolutional Neural Network (CNN) untuk mengenali dan membedakan tiga jenis objek, yaitu Laptop, Buku Gambar, dan Tas.
+## 2. Dataset
 
-## 3. Kelas Dataset
-Dataset yang digunakan terdiri dari tiga kelas:
-1. Laptop
-2. Buku Gambar
-3. Tas
+Dataset dikumpulkan menggunakan Samsung Galaxy A51 dengan tiga kategori objek:
 
-Jumlah dataset yang dikumpulkan:
-- Laptop: 40 foto
-- Buku Gambar: 40 foto
-- Tas: 40 foto
+- Laptop
+- Buku Gambar
+- Tas
 
-Total: 120 foto.
+Jumlah keseluruhan: 120 gambar.
 
-## 4. Pengumpulan Dataset
-Pengumpulan dataset dilakukan secara mandiri menggunakan kamera HP Samsung Galaxy A51.
+## 3. Kondisi Data
 
-Pengambilan gambar dilakukan dengan dua kondisi:
-- Kondisi ideal: Objek difoto dengan pencahayaan dan fokus yang baik.
-- Kondisi sulit: Objek difoto dengan kondisi yang lebih menantang, seperti gambar kurang fokus atau blur.
+Setiap kategori memiliki 20 gambar ideal dan 20 gambar sulit.
 
-## 5. Perangkat dan Media Penyimpanan
-- Perangkat pengambilan gambar: Samsung Galaxy A51.
-- Penyimpanan dataset: Google Drive.
-- Pengelolaan proyek dan dokumentasi: GitHub.
-- Lingkungan pemrograman yang disiapkan: Google Colab.
+## 4. Pembagian Dataset
 
-## 6. Hasil yang Telah Dicapai
-- Menentukan tiga kelas objek untuk klasifikasi.
-- Mengumpulkan 120 foto dataset.
-- Mengambil gambar dengan kondisi ideal dan sulit.
-- Membuat struktur folder Google Drive untuk penyimpanan dataset.
-- Membuat repository GitHub sebagai tempat penyimpanan kode dan dokumentasi proyek.
-- Menyiapkan Google Colab untuk pengerjaan selanjutnya.
+Pembagian dataset menggunakan rasio 70:15:15.
 
-## 7. Status
-Tahap perencanaan dan pengumpulan dataset telah dilakukan. Proyek selanjutnya akan berfokus pada pemeriksaan dataset dan persiapan pengolahan citra sebelum eksperimen CNN.
+| Dataset | Jumlah |
+|---|---:|
+| Training | 84 |
+| Validation | 18 |
+| Testing | 18 |
+
+Random state: 42.
+
+## 5. Hasil Checkpoint
+
+- Pengumpulan dataset selesai.
+- Struktur kelas dataset telah disiapkan.
+- Pemeriksaan kualitas gambar telah dilakukan.
+- Dataset telah dibagi menjadi training, validation, dan testing.
+- Dataset siap digunakan untuk eksperimen.
+
+## 6. Status
+
+Checkpoint 1 selesai.
