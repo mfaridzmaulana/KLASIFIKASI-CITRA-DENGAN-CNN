@@ -1,1 +1,15 @@
 
+# SOURCE CODE
+
+Folder ini digunakan untuk menyimpan fungsi-fungsi Python yang digunakan kembali dalam proyek klasifikasi citra menggunakan Convolutional Neural Network (CNN).
+
+## Rencana Isi
+
+1. Fungsi membaca dataset.
+2. Fungsi preprocessing gambar.
+3. Fungsi pengolahan citra.
+4. Fungsi pendukung klasifikasi CNN.
+
+## Status
+Folder source code telah disiapkan. Kode program akan ditambahkan setelah proses praktik dan pengembangan model dimulai.
+
