@@ -1,54 +1,44 @@
 
-# DATASET KLASIFIKASI CITRA CNN
+# Dataset
 
-## 1. Deskripsi Dataset
-Dataset merupakan kumpulan gambar yang diambil secara mandiri menggunakan smartphone Samsung Galaxy A51.
+Dataset utama disimpan di Google Drive.
 
-Dataset digunakan untuk proyek klasifikasi citra menggunakan metode Convolutional Neural Network (CNN).
+## Lokasi Dataset
 
-## 2. Kelas dan Jumlah Dataset
+Folder proyek:
 
-| No | Kelas | Jumlah Foto |
+COMPUTER VISION_TI 2026/kelompok 3/KLASIFIKASI CITRA DENGAN CNN/DATA MENTAH
 
-| 1 | Laptop       | 40 |
-| 2 | Buku Gambar | 40 |
-| 3 | Tas         |  40 |
-| | TOTAL         | 120 |
+## Jumlah Dataset
 
-## 3. Kondisi Pengambilan Gambar
+| Kelas | Jumlah |
+|---|---:|
+| Laptop | 40 |
+| Buku Gambar | 40 |
+| Tas | 40 |
+| Total | 120 |
 
-Dataset dikumpulkan dalam dua kondisi:
+## Kondisi Dataset
 
-- Ideal: Objek diambil dengan kondisi pencahayaan dan fokus yang baik.
-- Sulit: Objek diambil dengan kondisi yang lebih menantang, seperti kurang fokus atau blur.
+- Ideal: 60 gambar.
+- Sulit: 60 gambar.
 
-## 4. Perangkat Pengambilan
-- Smartphone: Samsung Galaxy A51.
-- Sumber dataset: Pengambilan foto secara mandiri.
-- Jumlah keseluruhan: 120 foto.
+## Pembagian Dataset
 
-## 5. Lokasi Dataset
+- Training: 84 gambar.
+- Validation: 18 gambar.
+- Testing: 18 gambar.
 
-Dataset asli disimpan di Google Drive dan dikelompokkan berdasarkan kelas objek serta kondisi pengambilan gambar.
+## Cara Mengakses
 
-Link Google Drive:
-https://drive.google.com/drive/folders/1XOrs7kWREk70p7YY_G2mvfE7bX0JuAVP
+1. Buka Google Drive.
+2. Masuk ke folder proyek Computer Vision.
+3. Buka folder DATA MENTAH.
+4. Unduh dataset apabila memiliki akses.
 
-## 6. Cara Mengakses Dataset
+## Catatan
 
-1. Buka link Google Drive yang tersedia.
-2. Masuk ke folder dataset.
-3. Pilih folder kelas Laptop, Buku Gambar, atau Tas.
-4. Pilih gambar berdasarkan kondisi ideal atau sulit.
-5. Gunakan dataset melalui Google Colab untuk proses pengolahan citra.
+Dataset lengkap tidak disimpan di repository GitHub.
+Hanya sampel maksimal 20 file gambar yang boleh diunggah ke repository.
 
-## 7. Penyimpanan Dataset
-
-Dataset lengkap disimpan di Google Drive, bukan di GitHub.
-
-Repository GitHub digunakan untuk menyimpan dokumentasi, kode program, dan hasil eksperimen.
-
-Sesuai ketentuan proyek, GitHub hanya akan digunakan untuk menyimpan sampel kecil dataset maksimal 20 file.
-
-## 8. Status
-Pengumpulan 120 foto dataset telah dilakukan. Tahap preprocessing dan eksperimen CNN belum dilaksanakan.
+Dataset digunakan untuk kepentingan akademik dan eksperimen klasifikasi citra.
